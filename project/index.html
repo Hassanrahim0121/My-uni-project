@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landmark Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Landmark Explorer</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+
+<!-- Slideshow -->
+<div class="slideshow">
+    <div class="Slides fade">
+        <div class="number_image">1 / 3</div>
+        <img src="/pictures/brandenburg-gate-7570577_1280.jpg" alt="Brandenburg Gate" style="width:100%">
+    </div>
+
+    <div class="Slides fade">
+        <div class="number_image">2 / 3</div>
+        <img src="/pictures/cultural-tourism-5264542_1280.jpg" alt="Taj Mahal" style="width:100%">
+    </div>
+
+    <div class="Slides fade">
+        <div class="number_image">3 / 3</div>
+        <img src="/pictures/egypt-3343460_1280.jpg" alt="Pyramid of Giza" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+<script src="script.js"></script>
+
+
+    <!--Welcome text-->
+    <div class="text_heading">
+        <h1>Welcome to Landmark Explorer!</h1>
+    </div>
+    <div class="welcome_text">
+        <p>
+            Think you know your history and geography? Test your knowledge of famous landmarks from around the world!
+            From ancient wonders to modern marvels, challenge yourself to guess the location of iconic sites. 
+            Whether you're a history buff, a geography guru, or just love exploring new places, this quiz is for you.
+        </p>
+    </div>    
+  <div class="row">
+    <div class="col">
+        <div class="text_heading_grid">
+            <h1>Brandenburg Gate</h1>
+          </div>
+          <img src="/pictures/brandenburg-gate-7570577_1280.jpg" alt="Brandenburg Gate" class="landmark-image">
+          <div class="text_grid">
+            <p>
+                The Brandenburg Gate (Berliner Tor) is one of Berlin's most famous landmarks and a powerful symbol of German unity and history. 
+                Located at the western end of the Unter den Linden boulevard, this neoclassical monument was commissioned by King Frederick
+                William II of Prussia in 1788 and completed in 1791. Originally designed as a city gate, it has witnessed numerous historical
+                events and transformations over the centuries.
+            </p> 
+          </div> 
+    </div>
+    <div class="col">
+        <div class="text_heading_grid">
+            <h1>pyramid of Giza</h1>
+          </div>
+          <img src="/pictures/egypt-3343460_1280.jpg" alt="Pyramid of Giza" class="landmark-image">
+          <div class="text_grid">
+            <p>
+                The Great Pyramid of Giza, also known as the Pyramid of Khufu or Cheops, is one of the most iconic and enduring symbols of ancient Egypt. 
+                Located on the Giza Plateau near Cairo, it is the largest of the three pyramids in the Giza pyramid complex and the only remaining wonder 
+                of the original Seven Wonders of the Ancient World.
+        
+                Built around 2560 BCE during Egypt's Fourth Dynasty, the pyramid was constructed as a tomb for the Pharaoh Khufu. 
+                Its original height was approximately 146.6 meters (481 feet), though today it stands slightly shorter due to the 
+                loss of its outer casing stones, which once gave it a smooth, gleaming surface. The structure is composed of over 
+                2.3 million blocks of limestone, each weighing an average of 2.5 tons, though some can reach as much as 80 tons.    </p>
+          </div>
+    </div>
+    <div class="col">
+        <div class="text_heading_grid">
+            <h1>Taj Mahal</h1>
+          </div>
+          <img src="/pictures/cultural-tourism-5264542_1280.jpg" alt="Taj Mahal" class="landmark-image">
+          <div class="text_grid">
+            <p>
+                The Taj Mahal, located in Agra, India, is one of the most iconic symbols of love and architectural beauty in the world. 
+                Built between 1632 and 1653 by the Mughal emperor Shah Jahan, the monument was created in memory of his beloved wife 
+                Mumtaz Mahal, who died during childbirth. It is an exquisite example of Mughal architecture, blending elements 
+                from Islamic, Persian, and Indian styles.
+        
+                The structure is made of gleaming white marble that changes color with the light of the day, giving the Taj Mahal an ethereal quality.
+                At its center lies the grand mausoleum with a large, elegant dome surrounded by four minarets. The complex also includes a mosque, 
+                a guest house, and beautifully landscaped gardens divided by a long reflecting pool, which creates a perfect mirror image of the monument.
+            </p>
+          </div>
+        
+    </div>
+  </div>
+ 
+</body>
+</html>

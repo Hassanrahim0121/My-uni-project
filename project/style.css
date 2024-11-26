@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;    /* Centers content vertically */
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures it spans the full width of the viewport */
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 20px; /* Adjust as needed for logo placement */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensures vertical alignment of list items */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px; /* Adjust spacing between items */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.text_heading {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 70px;
+}
+
+.welcome_text {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/*Slide show*/
+
+.slideshow {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.Slides {
+    display: none;
+}
+
+.Slides img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.number_image {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Adds spacing between columns */
+    align-items: flex-start; /* Aligns content to the top of the row */
+    flex-wrap: nowrap; /* Prevents wrapping, so they stay in one line */
+}
+
+.col {
+    flex: 1; /* Ensures each column has an equal width */
+    padding: 20px; /* Adds some padding to make columns more spaced out */
+    margin: 10px;
+    min-width: 300px; /* Prevents the columns from getting too small */
+    box-sizing: border-box;
+}
+.landmark-image {
+    width: 100%; /* Make the image span the full width of the column */
+    height: 300px; /* Maintain the aspect ratio */
+    object-fit: cover;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin-bottom: 15px; /* Add space between the image and the text */
+}
+
+.col {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    min-width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Center align the text and images */
+}
+
+.text_heading_grid {
+    color: black;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 70px;  
+}
+
+.text_grid {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px; 
+}
+
+.quiz_app {
+    background: rgba(242, 242, 242, 0.8); /* Light background with 80% opacity */
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    border: none; /* Remove the border entirely */
+}
+
+
+.quiz_app h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+}
+
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 1.25rem;
+    color: black;
+    font-weight: bold;
+}
+
+.btn {
+    background: transparent; /* Keep the button background fully transparent */
+    color: black; /* Text color remains visible */
+    font-weight: bold;
+    width: 100%;
+    border: 2px solid #222; /* Add a solid border color */
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover:not([disabled]) {
+    background: rgba(0, 0, 0, 0.8); /* Dark background on hover with 80% opacity */
+    color: white;
+}
+
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next {
+    background: white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    width: 150px;
+    border: 2px solid #222; /* Added border */
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+#next:hover {
+    background: black;
+    color: white;
+    border: 2px solid white; /* Optional: changes border color on hover */
+}
+
+
+.correct {
+    background: #2eff00;
+}
+
+.incorrect {
+    background:#ff0000;
+}
+.background-image {
+    background: url('/pictures/world.png') no-repeat center center fixed; /* Use your image URL */
+    background-size: cover; /* Make the image cover the entire element */
+    width: 100%;
+    height: 100vh; /* Set the height to cover the full viewport */
+    position: absolute; /* Position it so it covers the entire screen */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure it stays behind other content */
+}

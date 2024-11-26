@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landmark Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Background image-->
+    <div class="background img">
+    </div>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Landmark Explorer</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+    <div class="background-image"></div>
+    <div class="quiz_app">
+        <h1>Quiz - Landmark Explorer</h1>
+        <button id="startQuiz" class="btn">Start Quiz</button> <!-- New Start Button -->
+        <div id="quizContainer" class="quiz" style="display: none;"> <!-- Hide quiz initially -->
+           <h2 id="question">Where is the question?</h2>
+           <div id="answer_btn" class="answer-buttons">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+           </div>
+           <button id="next">Next</button>
+        </div>
+    </div>
+    
+    <script src="quiz_script.js"></script>
+</body>
+</html>
